@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #507a43;
+    cursor: wait;
+
+    
+
+
+}
+
+
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    background-size: cover;
+    background-position: center;
+   
+}
+.face{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ffdc16;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url("galleta.png"),pointer;
+    
+
+}
+
+.face::before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background:#000000;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+
+
+
+}
+
+.face:hover::before{
+    top: 180px;
+    width: 180px;
+    height: 20px;
+    background:#000000;
+
+
+}
+.eyes{
+    position: relative;
+    top:-40px;
+    display: flex;
+    
+}
+
+.eyes .eye{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    display: block;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate3d(-50%,-50%);
+
+}
